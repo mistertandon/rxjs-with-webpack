@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "babel-core": "^6.16.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "bluebird": "^3.4.6",
+    "browser-sync-webpack-plugin": "^1.1.3",
+    "css-loader": "^0.25.0",
+    "jshint-loader": "^0.8.3",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "wps": "webpack-dev-server",
+    "wp": "webpack --progress --colors --watch --hot"
+  }
+}
