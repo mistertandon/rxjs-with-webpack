@@ -22,12 +22,12 @@ var config = {
     devtool: "source-map"
 };
 
-var bluebirdPromise = Object.assign(
+var rxjs = Object.assign(
         {},
         config,
         {
             entry: {
-                dist_bb_promise: ["./src/js/bluebird_promise/src_promise"]
+                dist_rxjs_1: ["./src/js/rxjs/src_promise"]
             },
             output: {
                 path: './webpack_transpiled/bluebird_promise',
@@ -38,10 +38,10 @@ var bluebirdPromise = Object.assign(
 
 /**
  
- bluebirdPromise,
+ rxjs,
  
  */
 
 module.exports = [
-    bluebirdPromiseMapReduce
+    rxjs
 ];

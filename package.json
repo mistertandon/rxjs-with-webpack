@@ -6,10 +6,12 @@
     "bluebird": "^3.4.6",
     "browser-sync-webpack-plugin": "^1.1.3",
     "css-loader": "^0.25.0",
+    "jshint": "^2.9.4",
     "jshint-loader": "^0.8.3",
     "raw-loader": "^0.5.1",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
   },
   "scripts": {
     "wps": "webpack-dev-server",
