@@ -1,9 +1,14 @@
 const jQuery = require('jquery');
 const RxJs = require('rxjs/Rx');
 
-var setStream = new Set('parvesh', 'kumar', 'tandon', {
-    'gotra': 'khatri'
-}, 9650780712);
+var setStream = new Set([
+    'parvesh',
+    'kumar',
+    'tandon', JSON.stringify({
+        'gotra': 'khatri'
+    }),
+    9650780712
+]);
 
 /**
  *setStreamResSel: Array stream Result selector.
