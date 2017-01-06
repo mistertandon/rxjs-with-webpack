@@ -42,6 +42,17 @@ var rxjsWithArray = Object.assign({},
         }
     });
 
+var rxjsWithSet = Object.assign({},
+    config, {
+        entry: {
+            dist_rxjs_03_with_set: ["./src/js/rxjs/rxjs_03_with_set"]
+        },
+        output: {
+            path: './webpack_transpiled/rxjs',
+            filename: "[name].js"
+        }
+    });
+
 /**
  
  rxjs,
@@ -50,5 +61,8 @@ var rxjsWithArray = Object.assign({},
 
 module.exports = [
     rxjsUiEvents,
-rxjsWithArray
+    rxjsWithArray,
+    rxjsWithSet
 ];
+
+
