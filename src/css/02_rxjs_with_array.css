@@ -1,0 +1,9 @@
+ul#rxjs-with-array-ul li {
+    list-style: none;
+    background-color: #99B3FF;
+    height: 30px;
+    text-align: left;
+    padding-top: 9px;
+    padding-left: 10px;
+    margin-bottom: 2px;
+}

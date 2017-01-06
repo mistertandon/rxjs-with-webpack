@@ -20,7 +20,7 @@ var config = {
     devtool: "source-map"
 };
 
-var rxjs = Object.assign({},
+var rxjsUiEvents = Object.assign({},
     config, {
         entry: {
             dist_rxjs_1_ui_events: ["./src/js/rxjs/rxjs_1_ui_events"]
@@ -31,6 +31,16 @@ var rxjs = Object.assign({},
         }
     });
 
+var rxjsWithArray = Object.assign({},
+    config, {
+        entry: {
+            dist_rxjs_02_with_array: ["./src/js/rxjs/rxjs_02_with_array"]
+        },
+        output: {
+            path: './webpack_transpiled/rxjs',
+            filename: "[name].js"
+        }
+    });
 
 /**
  
@@ -39,5 +49,6 @@ var rxjs = Object.assign({},
  */
 
 module.exports = [
-    rxjs
+    rxjsUiEvents,
+rxjsWithArray
 ];
