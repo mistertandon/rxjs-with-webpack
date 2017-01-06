@@ -23,7 +23,7 @@ var config = {
 var rxjs = Object.assign({},
     config, {
         entry: {
-            dist_rxjs_ui_events: ["./src/js/rxjs/dist_rxjs_ui_events"]
+            dist_rxjs_1_ui_events: ["./src/js/rxjs/rxjs_1_ui_events"]
         },
         output: {
             path: './webpack_transpiled/rxjs',
