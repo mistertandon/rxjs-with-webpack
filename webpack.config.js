@@ -53,16 +53,20 @@ var rxjsWithSet = Object.assign({},
         }
     });
 
-/**
- 
- rxjs,
- 
- */
+var rxjsCreateObservable = Object.assign({},
+    config, {
+        entry: {
+            dist_rxjs_04_create_observale: ["./src/js/rxjs/rxjs_04_create_observale"]
+        },
+        output: {
+            path: './webpack_transpiled/rxjs',
+            filename: "[name].js"
+        }
+    });
 
 module.exports = [
     rxjsUiEvents,
     rxjsWithArray,
-    rxjsWithSet
+    rxjsWithSet,
+    rxjsCreateObservable
 ];
-
-
